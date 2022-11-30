@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "roboto";
+  background-color: aquamarine;
+}
+
+img {
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+header {
+  margin: 0%;
+  width: auto;
+  height: auto;
+}
+.logo {
+  position: fixed;
+  float: left;
+  margin-left: 0px;
+  margin-top: 3px;
+}
+nav {
+  position: fixed;
+  width: 100%;
+}
+.navbar {
+  height: 88px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 0px;
+  position: fixed;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+.navbar li {
+  margin-left: 17px;
+  padding: 10px 30px;
+  position: relative;
+}
+.navbar li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+
+  transition: all 0.3s;
+}
+.navbar li a:hover {
+  color: blue;
+}
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+.dropdownmenu {
+  display: none;
+}
+.navbar ul li:hover .dropdownmenu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: white;
+}
+.navbar ul li:hover .dropdownmenu ul {
+  display: block;
+  margin: 10px;
+}
+.navbar ul li:hover .dropdownmenu ul li {
+  width: 150px;
+  padding: 10px;
+}
+.dropdownmenu1 {
+  display: none;
+}
+.dropdownmenu ul li:hover .dropdownmenu1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: blue;
+}
+.search {
+  float: right;
+  color: black;
+  padding: 12px 75px;
+}
+.navbar input {
+  border: 2px solid rgb(4, 4, 105);
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.contact-box {
+  background: #fff;
+  display: flex;
+}
+.contact-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+.search {
+  border: black;
+  border-radius: 50px;
+}
+.contact-right {
+  flex-basis: 40%;
+  padding: 40px;
+  background: #1c00b5;
+  color: #fff;
+}
+h1 {
+  margin-bottom: 10px;
+}
+.container p {
+  margin-bottom: 10px;
+}
+.contact-right a {
+  text-decoration: none;
+  color: white;
+}

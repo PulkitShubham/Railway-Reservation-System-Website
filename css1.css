@@ -1,0 +1,333 @@
+html,
+body {
+  margin: 0%;
+  width: 100%;
+}
+
+/* img {
+  margin: auto;
+  height: auto;
+  width: 100%; */
+/* } */
+header {
+  position: fixed;
+  margin-top: 0%;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.logo {
+  position: relative;
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+nav {
+  position: fixed;
+  width: 100%;
+}
+.navbar {
+  margin-top: 0%;
+  height: 88px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 0px;
+  position: fixed;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+.navbar li {
+  margin-left: 17px;
+  padding: 10px 30px;
+  position: relative;
+}
+.navbar li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+
+  transition: all 0.3s;
+}
+.navbar li a:hover {
+  color: blue;
+}
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+.dropdownmenu {
+  display: none;
+}
+.navbar ul li:hover .dropdownmenu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.navbar ul li:hover .dropdownmenu ul {
+  display: block;
+  margin: 10px;
+}
+.navbar ul li:hover .dropdownmenu ul li {
+  width: 150px;
+  padding: 10px;
+}
+.dropdownmenu1 {
+  display: none;
+}
+.dropdownmenu ul li:hover .dropdownmenu1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: white;
+}
+.search {
+  float: right;
+  color: black;
+  padding: 12px 75px;
+}
+.navbar input {
+  border: 2px solid rgb(4, 4, 105);
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
+
+.earth {
+  margin-top: 0px;
+  background: url(images/abc.webp);
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+/* #find-trains {
+  margin-top: auto;
+  color: gray;
+  margin-top: 0px;
+  background-image: url(abc.webp);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  width: 100%;*/
+
+.search-trains-div {
+  margin: 5px 0;
+  padding: 5px 0;
+}
+.search-trains-div div {
+  position: relative;
+  height: 100%;
+  margin: 0 5px;
+}
+.form-input {
+  margin-top: 20px;
+  margin-left: 110px;
+  height: 55px;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 5px #ccc;
+  width: 400px;
+  color: rgba(0, 0, 255, 0.7);
+  border-radius: 5px;
+  padding-left: 20px;
+  font-weight: bold;
+  outline: none;
+  font-size: 20px;
+}
+::placeholder {
+  color: rgba(0, 0, 255, 0.7);
+}
+.container h1 {
+  margin-top: 190px;
+  margin-left: 120px;
+  color: white;
+}
+.search-btn {
+  margin-top: 20px;
+  margin-left: 110px;
+  width: 423px;
+  height: 55px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(31, 141, 192);
+  border-radius: 5px;
+}
+.flip-icon {
+  position: relative;
+  left: -20px;
+  top: 13px;
+  margin: 0;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+}
+#recent-searches {
+  margin: 30px 0;
+  color: gray;
+}
+.recent-card {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.4);
+  border: radius 5px;
+}
+.recent-card p {
+  margin: 0;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.recents-card {
+  color: blue;
+  margin: 0 5px;
+}
+.sun {
+  height: 200px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-direction: row;
+  border-top: aqua solid;
+  border-top-right-radius: 122px;
+  border-top-left-radius: 122px;
+  box-shadow: 0 0 10px #000000;
+}
+/*.sun ul {
+  list-style: none;
+}
+.sun li {
+  padding: 30px 30px;
+} */
+.sun img {
+  height: 100px;
+  width: 100px;
+}
+.sun a:hover {
+  transform: scale(1.5);
+}
+.moon {
+  background-color: yellow;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-direction: row;
+  border-bottom: yellow solid;
+  border-bottom-right-radius: 122px;
+  border-bottom-left-radius: 122px;
+  box-shadow: 0 0 10px #000000;
+}
+
+.moon img {
+  height: 100px;
+  width: 100px;
+}
+.moon a:hover {
+  transform: scale(1.5);
+}
+.amrit {
+  display: flex;
+  background-color: rgb(226, 220, 213);
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 15%;
+  box-shadow: 0 0 10px #000000;
+}
+.v {
+  height: 400px;
+  width: 600px;
+  box-shadow: 0 0 10px #000000;
+}
+#Holidays-section {
+  margin: 50px 0;
+}
+.heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+.holiday {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.holidays-card {
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+  margin: 10px;
+  box-shadow: 0px 0px 5px #ccc;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.holiday-para {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.holiday-heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+.holidays-card img {
+  height: 200px;
+  width: 400px;
+}
+
+.foot {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  background-image: url(images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  border-color: rgb(2, 0, 14);
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.foot h2 {
+  margin-top: 20px;
+}
+.foot img {
+  height: 50px;
+  width: 60%;
+}
